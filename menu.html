@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <style>
+
+   .main-menu{
+   text-decoration: none;
+   background: #c0c0c0;
+   text-align: center;
+   display: flex;
+   justify-content: center; 
+   }
+
+   .menu-item{
+      display: inline-block;
+      text-decoration: none;
+      border-right: 1px solid #888;
+      padding-right: 5px;
+   }
+  
+   a{
+      color: #727272;
+      text-decoration: none;
+   }
+   
+   .sub-menu 
+   {
+   height: 0;
+   overflow: hidden; 
+   opacity: 0; 
+   transition: all 0.3s ease-in;
+   text-decoration: none;
+   } 
+   
+   </style>
+</head>
+
+<body>
+   <div class="main-menu">
+      <ul class="menu">
+         <li class="menu-item">
+            <a href="#">home</a>
+         </li>
+         <li class="menu-item">
+            <a href="#">about</a>
+            <ul class="sub-menu">
+               <li>
+                  <a href="#">us</a>
+               </li>
+               <li>
+                  <a href="#">portfolio</a>
+               </li>
+               <li>
+                  <a href="#">services</a>
+               </li>
+            </ul>
+         </li>
+         <li class="menu-item">
+            <a href="#">works</a>
+            <ul class="sub-menu">
+               <li>
+                  <a href="#">frontend</a>
+               </li>
+               <li>
+                  <a href="#">backend</a>
+               </li>
+            </ul>
+         </li>
+      </ul>
+   </div>
+
+   <script src="js/menu.js"></script>
+</body>
+
+</html>
